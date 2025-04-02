@@ -13,9 +13,9 @@
   </licenseSets>
 
   <releases>
-    <release version="2.0.1-dev">
+    <release version="2.0.2-dev">
       Active development ...
-
+      Updated documentation references
     </release>
     <release version="1.0.0" date="2024-04-04">
       Initial release of STM32U0 Device Family Pack
@@ -104,7 +104,7 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32u031f4.pdf"                                                                  title="STM32U031x4/6/8 Datasheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
           __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
           __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
@@ -255,7 +255,7 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32u073c8.pdf"                                                                  title="STM32U073x8/B/C Datasheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
           __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
           __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
@@ -470,7 +470,7 @@
         <book name="https://www.st.com/resource/en/datasheet/stm32u083kc.pdf"                                                                   title="STM32U083xC Datasheet"/>
 
         <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
-          // Debug Access Variables, can be modified by user via copies of DBGCONF files as created by uVision. Also see sub-family level.
+          // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
           __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
           __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
@@ -574,7 +574,7 @@
         #define CMSIS_device_header "stm32u0xx.h"
       </RTE_Components_h>
       <files>
-        <file category="doc" name="https://github.com/Open-CMSIS-Pack/cmsis-toolbox/blob/main/docs/CubeMX.md"/>
+        <file category="doc" name="https://open-cmsis-pack.github.io/cmsis-toolbox/CubeMX"/>
       </files>
     </component>
   </components>
