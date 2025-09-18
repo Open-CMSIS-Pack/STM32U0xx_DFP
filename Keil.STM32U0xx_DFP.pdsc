@@ -20,6 +20,9 @@
       Updated Templates:
       - Added DWARF-5 debug information
       - Added generated output files
+      Package Description (pdsc):
+      - Shortened device family description
+      - Added Ddsp processor attribute
     </release>
     <release version="1.0.0" date="2024-04-04">
       Initial release of STM32U0 Device Family Pack
@@ -39,13 +42,11 @@
 
   <devices>
     <family Dfamily="STM32U0 Series" Dvendor="STMicroelectronics:13">
-      <processor Dcore="Cortex-M0+" DcoreVersion="r0p1" Dclock="48000000" Dfpu="NO_FPU" Dmpu="MPU" Dendian="Little-endian"/>
+      <processor Dcore="Cortex-M0+" DcoreVersion="r0p1" Dclock="48000000" Dfpu="NO_FPU" Dmpu="MPU" Ddsp="NO_DSP" Dendian="Little-endian"/>
       <book name="https://developer.arm.com/documentation/dui0662/latest" title="Cortex-M0+ Generic User Guide"/>
 
       <description>
-      The STM32U0xxxx mainstream microcontrollers are based on high-performance Arm® Cortex®-M0+ 32-bit RISC core operating at up to 48 MHz frequency.
-      Offering a high level of integration, they are suitable for a wide range of applications in consumer, industrial and appliance domains and ready for the Internet of Things (IoT) solutions.
-      The devices incorporate a memory protection unit (MPU), high-speed embedded memories, DMA, an extensive range of system functions, enhanced I/Os, and peripherals.
+High-performance STM32U0 MCUs with Arm Cortex-M0+ core, MPU, 1.3 DMIPS at 56 MHz.
       </description>
 
       <sequences>
