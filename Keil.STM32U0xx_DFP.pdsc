@@ -15,6 +15,7 @@
   <releases>
     <release version="2.0.2-dev">
       Active development ...
+      Updated debug configuration files
       Updated documentation references
       Updated Templates:
       - Added DWARF-5 debug information
@@ -106,11 +107,11 @@
         <book name="https://www.st.com/resource/en/reference_manual/rm0503-stm32u0-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32U0xx Reference Manual"/>
         <book name="https://www.st.com/resource/en/datasheet/stm32u031f4.pdf"                                                                  title="STM32U031x4/6/8 Datasheet"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
+        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.1">
           // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
-          __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
-          __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
+          __var DbgMCU_APB1FZR   = 0xC0001833;   // DbgMCU_APB1FZR:  Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2FZR   = 0x00070800;   // DbgMCU_APB2FZR:  Configure APB2 peripheral freeze behavior
         </debugvars>
 
         <memory name="SRAM1"    access="rwx" start="0x20000000" size="0x00002000" default="1" init="0" />
@@ -257,11 +258,11 @@
         <book name="https://www.st.com/resource/en/reference_manual/rm0503-stm32u0-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf" title="STM32U0xx Reference Manual"/>
         <book name="https://www.st.com/resource/en/datasheet/stm32u073c8.pdf"                                                                  title="STM32U073x8/B/C Datasheet"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
+        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.1">
           // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
-          __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
-          __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
+          __var DbgMCU_APB1FZR   = 0xC0001833;   // DbgMCU_APB1FZR:  Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2FZR   = 0x00070800;   // DbgMCU_APB2FZR:  Configure APB2 peripheral freeze behavior
         </debugvars>
 
         <memory name="SRAM1"    access="rwx" start="0x20000000" size="0x00008000" default="1" init="0" />
@@ -472,11 +473,11 @@
         <book name="https://www.st.com/resource/en/reference_manual/rm0503-stm32u0-series-advanced-armbased-32bit-mcus-stmicroelectronics.pdf"  title="STM32U0xx Reference Manual"/>
         <book name="https://www.st.com/resource/en/datasheet/stm32u083kc.pdf"                                                                   title="STM32U083xC Datasheet"/>
 
-        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.0">
+        <debugvars configfile="CMSIS/Debug/STM32U0x1_0x3.dbgconf" version="1.0.1">
           // Default values for variables in debug sequences are configured with a *.dbgconf file in the user project
           __var DbgMCU_CR        = 0x00000006;   // DBGMCU_CR:       DBGMCU configuration register
-          __var DbgMCU_APB1FZR   = 0x00000000;   // DbgMCU_APB1FZR:  DBGMCU APB1 freeze register
-          __var DbgMCU_APB2FZR   = 0x00000000;   // DbgMCU_APB2FZR:  DBGMCU APB2 freeze register
+          __var DbgMCU_APB1FZR   = 0xC0001833;   // DbgMCU_APB1FZR:  Configure APB1 peripheral freeze behavior
+          __var DbgMCU_APB2FZR   = 0x00070800;   // DbgMCU_APB2FZR:  Configure APB2 peripheral freeze behavior
         </debugvars>
 
         <memory name="SRAM1"    access="rwx" start="0x20000000" size="0x00008000" default="1" init="0" />
